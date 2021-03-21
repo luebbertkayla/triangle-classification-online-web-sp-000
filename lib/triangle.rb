@@ -12,12 +12,13 @@ class Triangle
     elseif (@side1 = @side2 <= @side3) || (@side2 + @side3 <= @side1) || (@side1 + @side2 <= @side2)
       raise TriangleError
     else 
-    if (@side1 == @side2) && (@side2 == @side3)
+      if (@side1 == @side2) && (@side2 == @side3)
       :equilateral
-    elseif (@side1 == @side2 || @side2 == @side3 || @side1 == @side3)
+      elseif (@side1 == @side2 || @side2 == @side3 || @side1 == @side3)
       :isosceles
-    elseif (@side1 != @side2) &&(@side2 != @side3) && (@side1 != @side3)
+      elseif (@side1 != @side2) &&(@side2 != @side3) && (@side1 != @side3)
       :scalene
+    end
       
 end
 
